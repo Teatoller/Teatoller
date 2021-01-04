@@ -4,13 +4,17 @@ ul {
   list-style-type: none;
   margin: 0em;
   padding: 0em;
-  width: 20em;
+  width: 15em;
+  position: fixed;
 }
 
 li a {
+  color: white;
   display: block;
-  line-height: 2em;
+  font-weight: lighter;
+  line-height: 3.3em;
   padding: 15.8px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -28,8 +32,11 @@ a:hover {
 }
 
 .img {
-  height: 20em;
-  width: 20em;
+  border-radius: 2px;
+  height: 15em;
+  width: 15em;
+  /* max-width: 100%; */
+  /* padding: 4px; */
 }
 
 .footer {
@@ -40,4 +47,49 @@ a:hover {
   position: fixed;
   text-align: center;
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.alignbox {
+  float: left;
+}
+
+#home {
+  height: 578px;
+  background-color: #f2f2fa;
+  margin-left: 15.05em;
+}
+
+#about {
+  height: 578px;
+  background-color: #f2f2fa;
+  margin-left: 15.05em;
+}
+
+#skills {
+  height: 578px;
+  background-color: #f2f2fa;
+  margin-left: 15.05em;
+}
+
+#portfolio {
+  height: 578px;
+  background-color: #f2f2fa;
+  margin-left: 15.05em;
+}
+
+.pill {
+  background-color: tomato;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
 }
