@@ -37,6 +37,7 @@ a:hover {
 .img {
   border-radius: 2px;
   height: 15em;
+  pointer-events: none;
   width: 15em;
 }
 
@@ -70,15 +71,18 @@ html {
 .alignskillsbox {
   float: left;
   width: 30%;
+  margin-top: 220px;
 }
 
 .middleskillsbox {
   float: left;
   width: 30%;
+  margin-top: 220px;
 }
 .edgeskillsbox {
   float: right;
   width: 30%;
+  margin-top: 220px;
 }
 
 #home {
@@ -106,16 +110,17 @@ html {
 }
 
 .pill {
-  background-color: tomato;
-  border: none;
-  color: black;
-  padding: 10px 20px;
+  background-color: transparent;
+  /* border: none; */
+  /* color: black; */
+  /* padding: 10px 20px; */
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+  /* text-decoration: none; */
+  display: inline-flex;
+  /* margin: 4px 2px; */
+  /* cursor: pointer; */
+  /* border-radius: 16px; */
+  margin-top: 220px;
 }
 
 .logo {
@@ -184,4 +189,23 @@ h4 {
   color: gray;
   padding: 8px;
   margin: 8px;
+}
+
+.icons {
+  display: inline;
+}
+
+.awesome-text {
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.grad {
+  height: 500px;
+  background-image: linear-gradient(#a3a3ff, #f2f2fa);
 }
