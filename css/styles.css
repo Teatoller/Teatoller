@@ -25,11 +25,6 @@ li a {
   background-color: #7879ff;
 }
 
-/* .active,
-a:hover {
-  background-color: #7879ff;
-} */
-
 a:hover {
   background-color: #a3a3ff;
 }
@@ -71,18 +66,15 @@ html {
 .alignskillsbox {
   float: left;
   width: 30%;
-  margin-top: 220px;
 }
 
 .middleskillsbox {
   float: left;
   width: 30%;
-  margin-top: 220px;
 }
 .edgeskillsbox {
   float: right;
   width: 30%;
-  margin-top: 220px;
 }
 
 #home {
@@ -111,27 +103,52 @@ html {
 
 .pill {
   background-color: transparent;
-  /* border: none; */
-  /* color: black; */
-  /* padding: 10px 20px; */
   text-align: center;
-  /* text-decoration: none; */
   display: inline-flex;
-  /* margin: 4px 2px; */
-  /* cursor: pointer; */
-  /* border-radius: 16px; */
   margin-top: 220px;
 }
 
 .logo {
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
   border-radius: 16px;
+}
+
+.icons {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  text-align: center;
+  margin: 1px;
+}
+
+span p {
+  color: gray;
+  font-size: 12px;
+}
+
+.skillset {
+  width: 34%;
+  float: left;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 20px;
+  padding-left: 18px;
+  margin-right: 10px;
+  margin-left: 100px;
+}
+
+.skillgrad {
+  background-image: linear-gradient(#a3a3ff, #f2f2fa);
+}
+
+.gradskill {
+  background-image: linear-gradient(#f2f2fa, #a3a3ff);
 }
 
 .timeline {
@@ -162,7 +179,6 @@ html {
 .container {
   padding: 10px;
   position: relative;
-  /* background-color: inherit; */
   width: 50%;
   margin-top: -5px;
 }
@@ -189,10 +205,7 @@ h4 {
   color: gray;
   padding: 8px;
   margin: 8px;
-}
-
-.icons {
-  display: inline;
+  text-decoration: underline;
 }
 
 .awesome-text {
@@ -208,4 +221,36 @@ h4 {
 .grad {
   height: 500px;
   background-image: linear-gradient(#a3a3ff, #f2f2fa);
+}
+
+.about {
+  display: block;
+  padding: 8px;
+}
+
+.aboutSlides {
+  display: inline-block;
+}
+
+.aboutimg {
+  border-radius: 2px;
+  height: 10em;
+  pointer-events: none;
+  width: 13em;
+  margin-right: 10px;
+  margin-left: 100px;
+  margin-top: 10px;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+.aboutfig {
+  text-align: center;
+}
+
+.aboutpitch {
+  font-style: oblique;
+  padding-left: 20px;
 }
