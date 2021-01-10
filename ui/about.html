@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="mySpinner()">
     <ul class="alignbox">
         <li><img class="img" src="../images/steven_developer.svg" alt=""></li>
         <li><a href="../index.html">Home</a></li>
@@ -18,7 +18,7 @@
         <li><a href="./portfolio.html">Portfolio</a></li>
     </ul>
     <div id="about">
-        <h1>About</h1>
+        <h1 class="headings">Steven Ennis</h1>
 
         <div>
             <span class="about"><i class="fa fa-github" aria-hidden="true">:&nbsp;</i><a
@@ -30,35 +30,38 @@
                     href="https://twitter.com/teatoller" target="_blank" rel="noreferrer noopener">Twitter</a></span>
             <span class="about"><i class="fa fa-map-marker" aria-hidden="true">:&nbsp;</i><a
                     href="https://latitude.to/map/ke/kenya/cities/kisumu" target="_blank"
-                    rel="noreferrer noopener">Location:
-                    Kisumu,
+                    rel="noreferrer noopener">Kisumu,
                     Kenya</a>
             </span>
 
         </div>
         <div class="about gradskill">
             <p class="aboutpitch">I am a continuous learner and a passionate Software Developer.</p>
-            <p class="aboutpitch">I have over 3 years experience with HTML, CSS, ReactJS, JavaScript, & PHP amongst
+            <p class="aboutpitch">I have over 3 years of experience with HTML, CSS, ReactJS, JavaScript, & PHP amongst
                 other technologies.
             <p class="aboutpitch">My goal is to be successful by building technology solutions that satisfy client
                 expectations.</p>
         </div>
+        <div id="loader"></div>
         <div>
-            <span class="aboutSlides"><img class="aboutimg" src="../images/lakehub_standup.jpg" alt="">
-                <p class="aboutfig">ALC Workshop</p>
+            <span class="aboutSlides imgaboutimg animate-bottom"><img class="aboutimg"
+                    src="../images/lakehub_standup.jpg" alt="">
+                <p class="aboutfig imgabouttxt">Andela Learning Community Workshop</p>
             </span>
-            <span class="aboutSlides"><img class="aboutimg" src="../images/steve_dev.jpg" alt="">
-                <p class="aboutfig">Code time Lakehub Kisumu</p>
+            <span class="aboutSlides imgaboutimg animate-bottom"><img class="aboutimg" src="../images/steve_dev.jpg"
+                    alt="">
+                <p class="aboutfig imgabouttxt">Code Time Lakehub Kisumu</p>
             </span>
-            <span class="aboutSlides"><img class="aboutimg" src="../images/Andela_Ke_Offfsite_2019-508.jpg" alt="">
-                <p class="aboutfig">Andela Kenya fellowship</p>
+            <span class="aboutSlides imgaboutimg animate-bottom"><img class="aboutimg"
+                    src="../images/Andela_Ke_Offfsite_2019-508.jpg" alt="">
+                <p class="aboutfig imgabouttxt">Andela Kenya Fellowship</p>
             </span>
         </div>
     </div>
     <div class="footer">
-        <p>Software Developer</p>
+        <p>&copy; &nbsp;Teatoller <span id="date"></span></p>
     </div>
-    <script src="app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
