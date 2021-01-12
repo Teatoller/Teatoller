@@ -90,6 +90,12 @@ html {
   margin-left: 15.05em;
 }
 
+#experience {
+  height: 578px;
+  background-color: #f2f2fa;
+  margin-left: 15.05em;
+}
+
 #skills {
   height: 578px;
   background-color: #f2f2fa;
@@ -318,6 +324,10 @@ span p {
   transform: rotateY(180deg);
 }
 
+.flipimg {
+  width: 240px;
+  height: 188px;
+}
 /* loader */
 #loader {
   position: absolute;
@@ -383,9 +393,423 @@ span p {
   }
 }
 
-#myDiv {
-  display: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+/* @media queries */
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  /* nav style */
+  ul {
+    max-width: 100%;
+  }
+
+  li a {
+    max-width: 100%;
+  }
+
+  .active {
+    background-color: #7879ff;
+  }
+
+  a:hover {
+    background-color: #a3a3ff;
+  }
+
+  .img {
+    border-radius: 2px;
+    height: 15em;
+    pointer-events: none;
+    width: 100%;
+  }
+
+  .footer {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .alignbox {
+    float: left;
+    position: absolute;
+    width: 100%;
+  }
+
+  .middlebox {
+    float: left;
+    width: 100%;
+  }
+  .edgebox {
+    float: right;
+    width: 100%;
+  }
+
+  .alignskillsbox {
+    float: left;
+    width: 30%;
+    margin-left: 8px;
+  }
+
+  .middleskillsbox {
+    float: left;
+    width: 100%;
+  }
+  .edgeskillsbox {
+    float: right;
+    width: 100%;
+  }
+
+  #home {
+    float: left;
+    background-color: #f2f2fa;
+    margin-top: 500px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  #demo {
+    margin-top: 580px;
+  }
+
+  .test {
+    display: inline-block;
+  }
+
+  #about {
+    float: left;
+    background-color: #f2f2fa;
+    margin-top: 200px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #experience {
+    float: left;
+    background-color: #f2f2fa;
+    margin-top: 580px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #skills {
+    height: 578px;
+    background-color: #f2f2fa;
+    margin-top: 580px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #portfolio {
+    float: left;
+    background-color: #f2f2fa;
+    margin-top: 580px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .pill {
+    background-color: transparent;
+    text-align: center;
+    display: inline-flex;
+    margin-top: 220px;
+  }
+
+  .logo {
+    border: none;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .icons {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    margin: 1px;
+  }
+
+  span p {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .skillset {
+    width: 100%;
+    float: left;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .skillgrad {
+    background-image: linear-gradient(#a3a3ff, #f2f2fa);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .gradskill {
+    background-image: linear-gradient(#f2f2fa, #a3a3ff);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .timeline {
+    float: left;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .timeline::after {
+    float: left;
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #bfbfff;
+    top: 20px;
+    bottom: 0;
+    left: 18px;
+    margin-left: -3px;
+  }
+
+  .content {
+    float: left;
+    padding: 20px 30px;
+    background-color: #bfbfff;
+    position: relative;
+    border-radius: 6px;
+    width: 80%;
+  }
+
+  .container {
+    float: left;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: -5px;
+  }
+
+  .container::after {
+    float: left;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -23.5px;
+    background-color: white;
+    border: 3px solid #bfbfff;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .right {
+    left: 30px;
+  }
+
+  .headings {
+    color: gray;
+    padding: 1px;
+    margin: 1px;
+    text-decoration: underline;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .awesome-text {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: gray;
+  }
+
+  .grad {
+    height: 500px;
+    background-image: linear-gradient(#a3a3ff, #f2f2fa);
+  }
+
+  .about {
+    display: block;
+    padding: 8px;
+  }
+
+  .aboutSlides {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .aboutimg {
+    border-radius: 2px;
+    height: 10em;
+    pointer-events: none;
+    width: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+  }
+
+  .aboutfig {
+    text-align: center;
+  }
+
+  .aboutpitch {
+    font-style: oblique;
+    padding-left: 20px;
+  }
+
+  .imgaboutimg:hover {
+    padding: 0.5px;
+    transition: transform 0.2s;
+    transform: scale(1.5);
+  }
+
+  .imgabouttxt:hover {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 240px;
+    height: 240px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-bottom: 4px;
+    margin-right: 0px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    width: 100%;
+  }
+
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bfbfff;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #7879ff;
+    color: white;
+    transform: rotateY(180deg);
+    max-width: 100%;
+  }
+
+  .flipimg {
+    width: 240px;
+    height: 188px;
+  }
+
+  /* loader */
+  #loader {
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    margin: -76px 0 0 -76px;
+    margin-top: 100px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #a3a3ff;
+    border-bottom: 16px solid #7879ff;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+  }
+
+  @-webkit-keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
 }
