@@ -1,14 +1,17 @@
 body {
   background-color: #f2f2fa;
+  margin: 0;
+  padding: 0;
 }
+
 /* nav style */
 ul {
   background-color: #bfbfff;
   list-style-type: none;
-  margin: 0em;
-  padding: 0em;
-  width: 15em;
+  margin: .5px;
+  padding: .5px;
   position: fixed;
+  width: 15em;
 }
 
 li a {
@@ -38,9 +41,9 @@ a:hover {
 
 .footer {
   background-color: #7879ff;
-  bottom: 0em;
+  bottom: 0;
   color: white;
-  left: 0em;
+  left: 0;
   position: fixed;
   text-align: center;
   width: 100%;
@@ -58,6 +61,7 @@ html {
   float: left;
   width: 50%;
 }
+
 .edgebox {
   float: right;
   width: 50%;
@@ -65,73 +69,74 @@ html {
 
 .alignskillsbox {
   float: left;
-  width: 30%;
   margin-left: 8px;
+  width: 30%;
 }
 
 .middleskillsbox {
   float: left;
   width: 30%;
 }
+
 .edgeskillsbox {
   float: right;
   width: 30%;
 }
 
 #home {
-  height: 578px;
   background-color: #f2f2fa;
+  height: 578px;
   margin-left: 15.05em;
 }
 
 #about {
-  height: 578px;
   background-color: #f2f2fa;
+  height: 578px;
   margin-left: 15.05em;
 }
 
 #experience {
-  height: 578px;
   background-color: #f2f2fa;
+  height: 578px;
   margin-left: 15.05em;
 }
 
 #skills {
-  height: 578px;
   background-color: #f2f2fa;
+  height: 578px;
   margin-left: 15.05em;
 }
 
 #portfolio {
-  height: 578px;
   background-color: #f2f2fa;
+  height: 578px;
   margin-left: 15.05em;
 }
 
 .pill {
   background-color: transparent;
-  text-align: center;
   display: inline-flex;
+  text-align: center;
   margin-top: 220px;
 }
 
 .logo {
+  cursor: pointer;
   border: none;
+  border-radius: 16px;
   height: 40px;
-  width: 40px;
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  border-radius: 16px;
+  width: 40px;
 }
 
 .icons {
   display: inline-block;
-  width: 60px;
   height: 60px;
   padding: 5px;
-  text-align: center;
   margin: 1px;
+  text-align: center;
+  width: 60px;
 }
 
 span p {
@@ -140,14 +145,13 @@ span p {
 }
 
 .skillset {
-  width: 34%;
   float: left;
   font-size: 16px;
   font-weight: lighter;
   margin-left: 20px;
-  padding-left: 18px;
   margin-right: 10px;
-  margin-left: 100px;
+  padding-left: 18px;
+  width: 34%;
 }
 
 .skillgrad {
@@ -159,35 +163,35 @@ span p {
 }
 
 .timeline {
-  position: relative;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
 }
 
 .timeline::after {
-  content: "";
-  position: absolute;
-  width: 3px;
   background-color: #bfbfff;
-  top: 20px;
   bottom: 0;
+  content: "";
   left: 18px;
   margin-left: -3px;
+  position: absolute;
+  top: 20px;
+  width: 3px;
 }
 
 .content {
-  padding: 20px 30px;
   background-color: #bfbfff;
-  position: relative;
   border-radius: 6px;
+  padding: 20px 30px;
+  position: relative;
   width: 350px;
 }
 
 .container {
+  margin-top: -5px;
   padding: 10px;
   position: relative;
   width: 50%;
-  margin-top: -5px;
 }
 
 .container::after {
@@ -198,7 +202,7 @@ span p {
   left: -23.5px;
   background-color: white;
   border: 3px solid #bfbfff;
-  top: 0px;
+  top: 0;
   border-radius: 50%;
   z-index: 1;
 }
@@ -234,7 +238,7 @@ span p {
   padding: 8px;
 }
 
-.aboutSlides {
+.about-slides {
   display: inline-block;
 }
 
@@ -328,6 +332,7 @@ span p {
   width: 240px;
   height: 188px;
 }
+
 /* loader */
 #loader {
   position: absolute;
@@ -349,6 +354,7 @@ span p {
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -358,6 +364,7 @@ span p {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -376,8 +383,9 @@ span p {
     bottom: -100px;
     opacity: 0;
   }
+
   to {
-    bottom: 0px;
+    bottom: 0;
     opacity: 1;
   }
 }
@@ -387,6 +395,7 @@ span p {
     bottom: -100px;
     opacity: 0;
   }
+
   to {
     bottom: 0;
     opacity: 1;
@@ -400,6 +409,7 @@ span p {
   body {
     width: 100%;
   }
+
   /* nav style */
   ul {
     max-width: 100%;
@@ -444,6 +454,7 @@ span p {
     float: left;
     width: 100%;
   }
+
   .edgebox {
     float: right;
     width: 100%;
@@ -459,6 +470,7 @@ span p {
     float: left;
     width: 100%;
   }
+
   .edgeskillsbox {
     float: right;
     width: 100%;
@@ -483,7 +495,7 @@ span p {
   #about {
     float: left;
     background-color: #f2f2fa;
-    margin-top: 200px;
+    margin-top: 580px;
     margin-left: 0;
     width: 100%;
   }
@@ -551,19 +563,18 @@ span p {
     margin-left: 0;
     padding-left: 0;
     margin-right: 0;
-    margin-left: 0;
   }
 
   .skillgrad {
     background-image: linear-gradient(#a3a3ff, #f2f2fa);
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .gradskill {
     background-image: linear-gradient(#f2f2fa, #a3a3ff);
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .timeline {
@@ -611,7 +622,7 @@ span p {
     left: -23.5px;
     background-color: white;
     border: 3px solid #bfbfff;
-    top: 0px;
+    top: 0;
     border-radius: 50%;
     z-index: 1;
   }
@@ -649,7 +660,7 @@ span p {
     padding: 8px;
   }
 
-  .aboutSlides {
+  .about-slides {
     display: inline-block;
     width: 100%;
   }
@@ -694,7 +705,7 @@ span p {
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     margin-bottom: 4px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 20px;
     box-shadow: 10px 10px 5px #ccc;
     -moz-box-shadow: 10px 10px 5px #ccc;
@@ -769,6 +780,7 @@ span p {
     0% {
       -webkit-transform: rotate(0deg);
     }
+
     100% {
       -webkit-transform: rotate(360deg);
     }
@@ -778,6 +790,7 @@ span p {
     0% {
       transform: rotate(0deg);
     }
+
     100% {
       transform: rotate(360deg);
     }
@@ -796,8 +809,9 @@ span p {
       bottom: -100px;
       opacity: 0;
     }
+
     to {
-      bottom: 0px;
+      bottom: 0;
       opacity: 1;
     }
   }
