@@ -1,7 +1,11 @@
-name: Super-Linter
+name: Publish to gh-pages
 
 # Run this workflow every time a new commit pushed to your repository
-on: push
+on:
+repository_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   # Set the job key. The key is displayed as the job name
