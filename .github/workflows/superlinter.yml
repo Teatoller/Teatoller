@@ -1,11 +1,9 @@
 name: Publish to gh-pages
 
 # Run this workflow every time a new commit pushed to your repository
-on:
-repository_dispatch:
-  push:
-    branches:
-      - main
+on: push
+branches:
+  - gh-pages
 
 jobs:
   # Set the job key. The key is displayed as the job name
