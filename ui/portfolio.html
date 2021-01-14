@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steven|Ennis Profile</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,7 +18,9 @@
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./experience.html">Work Experience</a></li>
                 <li><a href="./skills.html">Skills</a></li>
-                <li class="active"><a href="./portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="#portfolio">Portfolio</a></li>
+                <li class="item-visibility"><a href="#portfolio"><i class="fa fa-chevron-down"
+                            aria-hidden="true"></i></a></li>
             </ul>
         </nav>
         <main id="portfolio">
@@ -50,8 +53,7 @@
                 <div class="flip-card about-slides">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="flipimg" src="../images/steve_dev.jpg" alt="Avatar"
-                                style="width:240px;height:188px; filter: grayscale(100%);">
+                            <img class="flipimg flip-img-gray" src="../images/steve_dev.jpg" alt="Avatar">
                             <div class="footer">
                                 <p>Steven Ennis Profile</p>
                             </div>
@@ -138,7 +140,7 @@
         </main>
     </div>
 
-    <footer class="footer">
+    <footer class="footer make-small">
         <p>&copy;&nbsp;Teatoller <span id="date"></span>. All rights reversed.</p>
     </footer>
     <script src="../js/app.js"></script>

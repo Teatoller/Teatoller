@@ -8,8 +8,8 @@ body {
 ul {
   background-color: #bfbfff;
   list-style-type: none;
-  margin: .5px;
-  padding: .5px;
+  margin: 0.5px;
+  padding: 0.5px;
   position: fixed;
   width: 15em;
 }
@@ -113,6 +113,26 @@ html {
   margin-left: 15.05em;
 }
 
+.item-visibility {
+  visibility: hidden;
+}
+
+.experience-paragraph {
+  font-size: 12px;
+}
+
+.make-bold {
+  font-weight: bold;
+}
+
+.make-itallic {
+  font-style: italic;
+}
+
+.make-small {
+  font-size: small;
+}
+
 .pill {
   background-color: transparent;
   display: inline-flex;
@@ -142,6 +162,10 @@ html {
 span p {
   color: gray;
   font-size: 12px;
+}
+
+.skills-paragraph {
+  padding-left: 4px;
 }
 
 .skillset {
@@ -188,7 +212,7 @@ span p {
 }
 
 .container {
-  margin-top: -5px;
+  margin-top: 5px;
   padding: 10px;
   position: relative;
   width: 50%;
@@ -408,6 +432,8 @@ span p {
 @media screen and (max-width: 600px) {
   body {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   /* nav style */
@@ -417,6 +443,8 @@ span p {
 
   li a {
     max-width: 100%;
+    line-height: 3.3em;
+    padding: 4.6px;
   }
 
   .active {
@@ -479,13 +507,15 @@ span p {
   #home {
     float: left;
     background-color: #f2f2fa;
-    margin-top: 500px;
+    margin-top: 510px;
     margin-left: 0;
     max-width: 100%;
   }
 
   #demo {
+    font-size: 32px;
     margin-top: 580px;
+    margin-left: -30px;
   }
 
   .test {
@@ -495,7 +525,7 @@ span p {
   #about {
     float: left;
     background-color: #f2f2fa;
-    margin-top: 580px;
+    margin-top: 620px;
     margin-left: 0;
     width: 100%;
   }
@@ -503,7 +533,7 @@ span p {
   #experience {
     float: left;
     background-color: #f2f2fa;
-    margin-top: 580px;
+    margin-top: 620px;
     margin-left: 0;
     width: 100%;
   }
@@ -511,7 +541,7 @@ span p {
   #skills {
     height: 578px;
     background-color: #f2f2fa;
-    margin-top: 580px;
+    margin-top: 620px;
     margin-left: 0;
     width: 100%;
   }
@@ -519,9 +549,13 @@ span p {
   #portfolio {
     float: left;
     background-color: #f2f2fa;
-    margin-top: 580px;
+    margin-top: 620px;
     margin-left: 0;
     width: 100%;
+  }
+
+  .item-visibility {
+    visibility: visible;
   }
 
   .pill {
@@ -610,7 +644,7 @@ span p {
     padding: 10px;
     position: relative;
     width: 100%;
-    margin-top: -5px;
+    margin-top: 5px;
   }
 
   .container::after {
@@ -758,6 +792,10 @@ span p {
     height: 188px;
   }
 
+  .flip-img-gray {
+    filter: grayscale(100%);
+  }
+
   /* loader */
   #loader {
     position: absolute;
@@ -825,5 +863,27 @@ span p {
       bottom: 0;
       opacity: 1;
     }
+  }
+  /* scroll bar on small screen*/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
   }
 }
